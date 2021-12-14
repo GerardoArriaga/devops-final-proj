@@ -21,6 +21,7 @@ stages:
       inputs:
         command: 'buildAndPush'
         dockerfile: '**/Dockerfile'
+        containerRegistry: 'devops-final-proj'
         repository: gerardoarriaga/devops-final-proj
         tags: |
           $(tag)
