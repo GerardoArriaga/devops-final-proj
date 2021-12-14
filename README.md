@@ -28,4 +28,4 @@ This is a basic Express.js server used for JS Dev Experience documentation, in p
     npm start
     ```
 
-This is a demo to trigger the testing pipeline
+This is a demo to trigger the building the docker image pipeline.
