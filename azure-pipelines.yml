@@ -1,0 +1,17 @@
+trigger:
+  - main
+  - dev
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Installing Node.js'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'Installing dependencies and building'
